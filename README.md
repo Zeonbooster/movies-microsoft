@@ -1,71 +1,76 @@
-# Phase 1 Project Template - Minimum Viable Product (MVP)
+# Title
 
-![blueprint](images/blueprint.png)
+**Authors**: Ivan Torres
 
-This repository is like a blueprint, providing structure for your first End of Phase Project. We suggest you base your Phase 1 project off of this repository so you can focus less on formatting and organization, and more on the _analysis and communication skills_ that will support your progress through the course. This template is designed to make your project portfolio-ready in order to impress the future employers who will review it. 
+## Overview
 
-## Repository Contents
+The following project is intended to suggest recommendations in the new Microsoft movie studio. More than 15k movies were analyzed in this project
 
-Below is a list of the contents of this repository - instructions for using them are in the next section.
+## Business Problem
 
-- `README.md`: The README for this repo branch explaining it's contents - you're reading it now
-- `TEMPLATE_README.md`: An example of a project README that provides a brief overview of your whole project
-- `dsc-phase1-project-template.ipynb`: A starter Jupyter Notebook with headings, code examples and guiding questions
-- `DS_Project_Presentation_Template.pdf`: A starter slide deck presenting your project - here is an [editable version](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy)
-- `data` folder: A folder for the data you reference with your code
-- `images` folder: A folder for the images you reference in your files 
-- `.gitignore`: A hidden file that tells git to not track certain files and folders
+The new movie studio could reduce its costs and use its resources more effectively. This could help the study to obtain profit in its beginnings
 
-## Instructions For Using This Repository
+The important points that we will analyze now are the following:
+* Which genre is the most profitable?
+* How much the new studio should invest in the production of the movie?
+* What would be a good runtime for the movie?
+***
 
-### Fork This Repository
+## Data
 
-**For a group project**, have only one team member do these steps:
+The Data used in this project are Datasets from [The Numbers](https://www.the-numbers.com) and [IMDB](https://www.imdb.com). 
+The TN Dataset provide us with cost of productions and grossing and the IMDB Dataset have the genres, runtime and other basic information
 
-1. Fork this repository to your personal account
-   - In GitHub, go to this repository and click the "Fork" button in the upper right
-   
-2. Change the name of your fork of this repo to a _descriptive_ name of your choosing
-   - In GitHub, go to your fork of this repo -> "Settings" -> "Options" -> "Repository Name" -> "Rename"
-   - Make the name descriptive, since potential employers will read it. Ex: "Microsoft-Movie-Analysis" is better than "Project-1"
+## Methods
 
-3. Use `git clone` to clone your fork of this repo to your local computer
+This project uses descriptive analysis, helping us to describe the trends in the Genres, Runtime and Production budget.
 
-4. **For a group project**, add team members as collaborators to your fork of this repo
-   - In GitHub, go to your fork of this repo -> "Settings" -> "Manage Access" -> "Invite Teams or People"
-   - Add your project team members as collaborators & send them the repo GitHub URL
+## Results
 
-### Work In Your Fork Of This Repository
+In our top 100 grossing movies they used the following amount of money to cover the productions cost
 
-- Work in the repo clone that you created on your local machine
-- Start writing and coding in the Jupyter Notebook `dsc-phase1-project-template.ipynb`
-- Fill in the README template in `TEMPLATE_README.md`
-- Use `git add`, `git commit`, and `git push` often to update your repo in GitHub
-   - For a refresher on how to do this and why it's important, review Topic 2: Bash and Git
 
-### Use The Slide Template
 
-1. Go to [this link](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy) to make an editable copy of the slide deck in your own Google Drive account
-2. Go to "Slide," select "Change Theme," and pick a theme you like so your presentation doesn't look like everyone else's
-3. **For a group project**, click the "Share" button and add your teammates as editors
+### Visual 1
+![grossing_films_by_productions](./images/grossing_films_by_productions.png)
 
-### Tidy Up Your Project
+The top 3 grossing genres in our Top 100 Grossing movies
 
-- Change the file name of the Jupyter Notebook (`dsc-phase1-project-template.ipynb`) to something more descriptive
-- Save an appropriately-named PDF version of your slide deck to the repository
-- Rename the template readme you've been working in by running `git mv TEMPLATE_README.md README.md`
-- Delete unnecessary files from the repo using `git rm`
-   - The presentation PDF: `DS_Project_Presentation_Template.pdf`
-   - This README file: `README.md`
-   - Any unused data files in the `data` folder
-   - Any unused images in the `images` folder
+![grossing_films_by_genre](./images/grossing_films_by_genre.png)
 
-### Submit Your Project
+The grossing movies by runtime
 
-To submit your project, please follow the instructions in the "Project Submission & Review" page in the Milestones course.
+![grossing_films_by_runtime](./images/grossing_films_by_runtime.png)
+
+## Conclusions
+This analysis leads to three recomendations to help save money and obtain profits
 
 ***
-### Notes
 
-- The visualizations in the notebook use best practices for visualization that you should try to emulate. For example, they have clear axes, descriptive titles, and appropriate number formatting
-- The `dsc-phase1-project-template.ipynb` is intended to be the _final version_ of your project. The first notebook you create will not look like this. You are encouraged to start with a very disorderly notebook and clean it as you go
+* The 3 top genres are the followings : 1st place is Adventure, 2nd Action and 3rd Sci-Fi
+* The production budget should be around the 150 - 220 millions dollars.
+* the runtime of the movie should be around 1:40 hours to 2:20 hours long movie
+
+The 3 recommendations stated before could lead to a profit of 500 - 1000 million dollars
+***
+
+## Next Steps
+
+***
+* This model could use aditional infomartion such as Studios, Actors/Actress, Directors. To see if factors have an impact on the prdocution budget or in the monetary succes of a film.
+
+Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
+
+For any additional questions, please contact **name & email, name & email**
+
+## Repository Structure
+
+Describe the structure of your repository and its contents, for example:
+
+```
+├── README.md                         
+├── dsc-phase1-project-template.ipynb  
+├── DS_Project_Presentation.pdf        
+├── data                                
+└── images                             
+```

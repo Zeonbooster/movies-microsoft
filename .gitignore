@@ -157,4 +157,4 @@ __pycache__/
 *$py.class
 
 # Ignoring im.db
-data/zippedData/im.db
+data/im.db
