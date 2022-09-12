@@ -65,13 +65,10 @@ For any additional questions, please contact **name & email, name & email**
 
 ## Repository Structure
 
-Describe the structure of your repository and its contents, for example:
-
 ```
 ├── README.md                         
-├── dsc-phase1-project-template.ipynb  
-├── DS_Project_Presentation.pdf        
+├── phase1-project.ipynb  
+├── Presentation.pdf        
 ├── data                                
 └── images                             
 ```
->>>>>>> template-mvp
